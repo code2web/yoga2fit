@@ -1,0 +1,907 @@
+
+/*========================*/
+/*=======BASIC SETUP======*/
+/*========================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	/* ==body bg when i create responsive==
+	background: #de13bcc9; */
+	font-family: openSans;
+	text-rendering: optimizeLegibility;
+	line-height: 1.1;
+}
+
+ul li {
+	text-decoration: none;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*HEADING*/
+
+h1 {
+	color: #deb37e;
+	font-size: 8rem;
+	font-weight: bolder;
+	letter-spacing: .3rem;
+	text-transform: uppercase;
+}
+
+
+
+/*========================*/
+/*=======REUSABLE COMPONANTS======*/
+/*========================*/
+
+.row {
+	display: flex;
+	justify-content: space-around;
+}
+
+section {
+	height: 100rem;
+	padding: 8rem 0;
+}
+
+h2 {
+	font-size: 7.5rem;
+	font-weight: bolder;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+h3 {
+	margin-bottom: 4rem;
+	font-size: 6rem;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h4 {
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 2rem;
+}
+
+/* PRAGRAPG */
+
+.description {
+	width: 50%;
+	margin-left: 25%;
+	margin-bottom: 7rem;
+	text-align: center;
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: lighter;
+}
+
+/*BUTTON*/
+
+.btn,
+.btn:link,
+.btn:visited {
+	background: #7f7770;
+	color: #fff;
+	font-size: 2.3rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 2.5rem 7rem;
+	border-radius: .5rem;
+	display: inline-block;
+}
+
+
+/*========================*/
+/*=======HEADER SECTION======*/
+/*========================*/
+
+header{
+	position: relative;
+	background: url(header-bg-with-shape.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100rem;	
+}
+
+.row-nav {
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo{
+	height: 9rem;
+	width: auto;
+	margin-top: 1rem;
+}
+
+/* MAIN NAV */
+
+.main-nav{
+	margin-top: 2rem;
+}
+
+.main-nav li{
+	display: inline-block;
+	margin-left: 3rem;
+}
+.main-nav li:first-child{
+	margin-left: 0;
+}
+.main-nav li:last-child{
+	padding: 0;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+	color: #54524f;
+	text-decoration: none;
+	text-transform: uppercase;
+	background: rgba(195, 191, 188, 0);
+	padding: 1rem 2rem;
+	border-radius: .3rem;
+	font-size: 1.6rem;
+}
+
+.main-nav li:hover a:link,
+.main-nav li:hover a:visited{
+	color: #e2a355;
+	font-weight: bold;
+	background: rgba(195, 191, 188, 1.0);
+}
+
+.active{
+	background: rgba(195, 191, 188, 1.0);
+	padding: 1rem 2rem;
+	border-radius: .3rem;
+}
+
+.search{
+	height: 2rem;
+	width: auto;
+	font-size: 6rem;
+	background: rgba(195, 191, 188, 1.0);
+	padding-left: 9rem;
+	padding-right: 1rem;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+	border-radius: 1rem;
+}
+
+
+/* MAIN NAV END */
+
+.row-hero {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.hero-text-box{
+	height: 40rem;	
+	width: 55rem;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+
+.hero-text-box h4{
+	color: #54524f;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.btn-hero{
+	font-size: 2.5rem;
+	font-weight: bold;
+	margin-top: 3rem;
+	margin-left: 2rem;
+}
+
+.btn-hero a:link,
+.btn-hero a:visited{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #776c64;
+	display: block;
+}
+
+.btn-hero:hover a:link,
+.btn-hero:hover a:visited{
+	/*text-decoration: underline;
+	text-decoration-color: blue;*/
+	background: #deb37e;
+	padding: 1rem;
+	display: inline-block;
+	border-radius: .3rem;
+}
+
+.hero-text-box p{
+	color: #54524f;
+	font-size: 2rem;
+	margin-top: 2rem;
+	font-style: italic;
+}
+
+/*=== STICKY menu ===*/
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 2rem;
+	z-index: 999;
+	background: rgba(222, 179, 126, 0.5);
+}
+.sticky .logo {
+	height: 3rem;
+	margin-top: .3rem;
+}
+.sticky .main-nav {
+	margin-top: 0;
+}
+
+/*=== mobile menu ===*/
+
+.mobile-menu span {
+	color: #54524f;
+	font-size: 4rem;
+	float: right;
+	display: none;
+}
+
+.mobile-menu span:hover {
+	cursor: pointer;
+}
+
+.overlay {
+	position: fixed;
+	height: 95%;
+	width: 0;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.7);
+	overflow-x: hidden;
+	transition: .5s;
+	z-index: 1;
+}
+
+.overlay-content {
+	position: relative;
+	top: 5%;
+	width: 100%;
+	text-align: center;
+	margin-top: 10rem;
+}
+
+.overlay a {
+	text-decoration: none;
+	display: block;
+	font-size: 3rem;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	color: #999;
+	padding: 1rem 0;
+}
+
+.overlay a:hover {
+	color: #e2a355;
+	font-weight: bold;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 1rem;
+	right: 3.5rem;
+	font-size: 6rem;
+}
+
+
+/*=== mobile menu End ===*/
+
+
+/*========================*/
+/*=======GO SECTION======*/
+/*========================*/
+
+.go{
+	height: 130rem;
+	background: url(go-bg-shadow.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left bottom;
+}
+
+
+/*====grid.css costomize===*/
+.go .col {
+	margin: 1% 2% 1% 2%;
+}
+.go .col:first-child {
+}
+.go .span_1_of_3 {
+		width: 28.26%;
+}
+@media only screen and (max-width: 480px) {
+	.go .span_1_of_3 {
+		width: 100%;
+	}
+}
+/*====grid.css costomize===*/
+.go h3{
+	color: #e2a355;
+}
+
+.go .description {
+	color: #7f7770;
+}
+
+.go img, .go-card-footer {
+	width: 92%;
+}
+
+.go-card-footer {
+	background: #7f7770;
+	color: #fff;
+	padding: 6rem 0;
+	padding-left: 1rem;
+}
+
+.go-card-footer p {
+	font-size: 2rem;
+	font-weight: lighter;
+}
+
+.btn-show {
+margin-left: 33.3%;
+margin-top: 4rem;
+margin-bottom: 8rem;
+}
+
+
+/*========================*/
+/*=======DISCOUNT SECTION======*/
+/*========================*/
+
+.discount {
+	height: 130rem;
+}
+
+.dis-flex {
+	display: flex;
+}
+
+.box-content-discount {
+	background: #7f7770;
+	padding-left: 5rem;
+	padding-right: 10rem;
+}
+
+/*=======DISCOUNT-PROMO TOGETHER START======*/
+
+/* div and img height */
+
+.discount-promo-height {
+	height: 66rem;
+	width: 50%;
+}
+
+.discount-promo-height-img {
+	height: 66rem;
+	width: 50%;
+	overflow: hidden;
+}
+
+
+/*
+.discount-promo-height img {
+	height: 66rem;
+	width: auto;
+}*/
+
+/* Conten desighn */
+
+.discount-promo-content {
+	padding-top: 15rem;
+	padding-bottom: 10rem;
+}
+
+.discount-promo-content h3 {
+	font-size: 4rem;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+.discount-promo-content p {
+	font-size: 2.5rem;
+	font-weight: lighter;
+	color: #fff;
+	margin-bottom: 5rem;
+}
+
+/* section padding decrement*/
+
+section.discount .col,
+section.promo .col {
+	margin: 0;
+}
+
+section.discount,
+section.promo {
+	padding: 0;
+}
+
+/* section padding increment */
+
+
+
+/* BTN */
+
+.btn-discount:link,
+.btn-discount:visited,
+.btn-promo:link,
+.btn-promo:visited {
+	background: #e2a355;
+}
+
+/*=======DISCOUNT-PROMO TOGETHER END======*/
+
+/*========================*/
+/*=======PROMO SECTION======*/
+/*========================*/
+
+.promo {
+
+}
+
+.box-content-promo {
+	background: #deb37e;
+	padding-right: 5rem;
+	padding-left: 10rem;
+}
+
+
+/*========================*/
+/*=======HIKING-MOUNTS SECTION======*/
+/*========================*/
+
+.hiking-mounts {
+	background: url(hiking-mounts-bg-with-shadow.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 10rem;
+}
+
+.hiking-mounts h3 {
+	padding-top: 30rem;
+}
+
+
+/*========================*/
+/*=======HIKING-EXPLORE SECTION======*/
+/*========================*/
+
+.hiking-explore {
+	background: url(explore-bg-with-shadow.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#expo {
+	padding-top: 30rem;
+	padding-right: 9rem;
+}
+
+#explore {
+	color: #deb37e;
+}
+
+#the-world{
+color: #54524f;
+}
+
+
+/*========================*/
+/*=======HIKING-COMMENTS SECTION======*/
+/*========================*/
+
+.hiking-comments {
+	height: 50rem;
+	background: url(hiking-comments-bg-shadow.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: right;
+}
+
+
+/*====grid.css costomize===*/
+.hiking-comments .col {
+	margin: 1% 0 1% 5%;
+}
+.hiking-comments .col:first-child {
+}
+.hiking-comments .span_1_of_3 {
+		width: 28.26%;
+}
+@media only screen and (max-width: 480px) {
+	.hiking-comments .span_1_of_3 {
+		width: 100%;
+	}
+}
+/*====grid.css costomize===*/
+
+
+.hiking-comments h4 {
+	color: #deb37e;
+}
+
+.hiking-comments .comments p {
+	font-size: 1.9rem;
+	font-weight: lighter;
+	color: #333d42;
+}
+
+.hiking-comments .comments-footer {
+	margin-top: 5rem;
+}
+
+.hiking-comments .comments-footer .comments-footer-p {
+	text-align: center;
+	color: #3f3f3f;
+}
+
+.comments-footer-p-first {
+	font-size: 10rem;
+	font-weight: bolder;
+}
+
+.comments-footer-p-second {
+	font-size: 2.5rem;
+	padding-left: 10rem;
+}
+
+.comments-footer-p-third {
+	font-size: 2rem;
+	font-weight: bold;
+	padding-top: 5rem;
+}
+
+
+/*========================*/
+/*=======SUBSCRIBE SECTION======*/
+/*========================*/
+
+.subscribe {
+	background: url(subscribe-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.subscribe-title {
+	padding-top: 30rem;
+}
+
+.subscribe-title .description {
+	color: #54524f;
+}
+
+.subscribe-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.subscribe-btn input {
+	font-size: 2.5rem;
+	background: #fff;
+	color: #8b8a88;
+	border: none;
+	border-radius: 3rem;
+	padding: 2rem 10rem 2rem 2rem;
+	position: relative;
+	margin-right: -10rem;
+}
+
+.btn-subscribe {
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: #54524f;
+	color: #fff;
+	border: none;
+	border-radius: 3rem;
+	padding: 2rem;
+	position: absolute;
+	z-index: 1;
+}
+
+
+/*========================*/
+/*=======FOOTER SECTION======*/
+/*========================*/
+
+.footer {
+	background: #7f7770;
+	height: 50rem;
+	padding-top: 7rem;
+	color: #fff;
+}
+
+.footer .paad {
+	margin-left: 4%;
+}
+
+.footer-title {
+	width: 25rem;
+}
+
+.footer .footer-title ul li:first-child {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 3.2rem;
+}
+
+.footer .footer-title ul li {
+	font-size: 2rem;
+	font-weight: lighter;
+	margin-bottom: 1.8rem;
+}
+
+.footer .go-title ul li:first-child {
+	font-size: 3rem;
+	font-weight: bold;
+	text-transform: capitalize;
+	margin-bottom: 3.2rem;
+}
+
+.social ul li {
+	display: inline-block;
+	margin-right: 1.4rem;
+}
+
+.footer .footer-about li a:link,
+.footer .footer-about li a:visited {
+	color: #fff;
+	font-size: 2rem;
+	font-weight: lighter;
+	text-transform: capitalize;
+}
+
+.footer .footer-about li:first-child a:link,
+.footer .footer-about li:first-child a:visited {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.footer .footer-about li {
+	margin-bottom: 1.8rem;
+}
+
+.footer .footer-about li:first-child {
+	margin-bottom: 3.2rem;
+}
+
+/* 1200px 1024px 980px 768px 480px */
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1024px) {
+	.main-nav li{
+		margin-left: .5rem;
+	}
+	.main-nav li a:link,
+	.main-nav li a:visited {
+		padding: 1rem 1rem;
+	}
+	.footer {
+		height: 160rem;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.social ul li {
+		margin-right: .5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 2.5rem;
+	}
+	h4 {
+		font-size: 2rem;
+	}
+	.header .row-nav {
+		justify-content: space-between;
+	}
+	.mobile-menu span {
+		display: block;
+	}
+	.main-nav {
+		display: none;
+	}
+	.discount {
+	height: 160rem;
+	}
+	.discount-promo-content {
+		padding-top: 5rem;
+		padding-bottom: 2.5rem;
+	}
+	.btn, .btn:link, .btn:visited {
+		padding: 1rem 3.5rem;
+	}
+	.hiking-mounts {
+		height: 150rem;
+		padding-top: 30rem;
+	}
+	.hiking-comments {
+		height: 80rem;
+	}
+	.hiking-comments .comments-footer {
+		margin-top: 3rem;
+	}
+	.comments-footer-p-second {
+		padding-left: 0;
+	}
+	.subscribe-btn input {
+		margin-right: -15rem;
+	}
+	.social ul li {
+		margin-right: 2rem;
+		margin-bottom: 1rem;
+	}
+}
+
+/* ==for Surface Duo== */
+@media only screen and (max-width: 568px) {
+	.hero-text-box {
+		width: 100%;
+		left: 0;
+		top: 25%;
+	}
+	.discount-promo-content p {
+		font-size: 1.8rem;
+	}
+	.btn, .btn:link, .btn:visited {
+		font-size: 1.6rem;
+	}
+	.subscribe-btn input {
+		margin-right: -8rem;
+		font-size: 1rem;
+	}
+	.btn-subscribe {
+		font-size: 1.8rem;
+		padding: 1.5rem;
+	}
+	.footer .footer-title ul li:first-child {
+		font-size: 1.8rem;
+	}
+	.footer .footer-title ul li {
+		font-size: 1.6rem;
+	}
+	.footer .go-title ul li:first-child {
+		font-size: 1.8rem;
+	}
+	.footer .footer-about li a:link,
+	.footer .footer-about li a:visited {
+		font-size: 1.6rem;
+	}
+	.footer .footer-about li:first-child a:link,
+	.footer .footer-about li:first-child a:visited {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	html {
+		font-size: 42.5%;
+	}
+	.logo {
+	height: 5rem;
+	margin-top: .3rem;
+	}
+	.hero-text-box {
+		width: 100%;
+		left: 0;
+		top: 25%;
+	}
+	.go {
+		height: 280rem;
+	}
+	.row {
+		flex-direction: column;
+	}
+	.btn-show {
+		margin-left: 2%;
+	}
+	.box-content-discount {
+		background: #7f7770;
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
+	.box-content-promo {
+		background: #deb37e;
+		padding-right: 5rem;
+		padding-left: 5rem;
+	}
+	.span_1_of_2 {
+		width: 49.2%;
+	}
+	.dis-flex {
+		flex-direction: column;
+	}
+	.discount-promo-height {
+		height: 100%;
+		width: 100%;
+	}
+	.discount-promo-height-img {
+		height: 100%;
+		width: 100%;
+	}
+	.discount-promo-height-img img {
+		height: 30rem;
+	}
+	.hiking-comments .comments-footer .comments-footer-p {
+		text-align: left;
+	}
+	.btn, .btn:link, .btn:visited {
+		padding: 1rem 2rem;
+	}
+	.subscribe-btn {
+		flex-direction: column;
+		align-items: center;
+	}
+	.subscribe {
+		height: 120rem;
+	}
+	.subscribe-btn input {
+		margin-right: 0rem;
+		font-size: 1rem;
+	}
+	.btn-subscribe {
+		position: static;
+		margin-top: 2rem;
+	}
+	.footer {
+		height: 160rem;
+	}
+}
+
+
+@media only screen and (max-width: 300px) {
+	.go {
+		height: 230rem;
+	}
+}
+@media only screen and (max-width: 200px) {
+	.go {
+		height: 200rem;
+	}
+}

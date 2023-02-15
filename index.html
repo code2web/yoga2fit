@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<title>hiking concept</title>
+	<!-- css link-->
+	<!-- display flex; this reason grid.css not included
+	<link rel="stylesheet" type="text/css" href="css/grid.css">
+	-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+</head>
+<body>
+
+<!-- Start HEADER Section-->
+
+<header class="header" id="header">
+	<nav id="sticky-menubar">
+	<div class="row-nav">
+		<div class="item1">
+			<a href="#header">
+				<img src="logo.png" alt="hiking-logo" class="logo">
+			</a>
+		</div>
+		<div class="item2">
+			<ul class="main-nav">
+				<li class="active"><a href="#header">home</a></li>
+				<li><a href="#discount">menu</a></li>
+				<li><a href="#go">our story</a></li>
+				<li><a href="#subscribe">contact us</a></li>
+				<li><a href=""><img class="search" src="search.png"></a></li>
+			</ul>
+			<div class="mobile-menu">
+				<span onclick="openNav()">&#9776;</span>
+				<div class="overlay" id="myNav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<div class="overlay-content">
+						<a onclick="closeNav()" href="#header">home</a>
+						<a onclick="closeNav()" href="#discount">menu</a>
+						<a onclick="closeNav()" href="#go">our story</a>
+						<a onclick="closeNav()" href="#subscribe">contact us</a>
+						<a onclick="closeNav()" href=""><img class="search" src="search.png"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</nav>
+	<div class="hero-text-box row-hero">
+		<h1>it's time for hiking</h1>
+		<h4>lorem ipsum dolor</h4>
+		<div class="btn-hero">
+			<a href="">read more</a>
+		</div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do iusmod tempor incididunt ut labore et dolore magna.</p>
+	</div>
+</header>
+
+<!-- End HEADER Section-->
+
+
+<!-- Start GO Section-->
+
+<section class="go" id="go">
+	<div class="">
+		<h3>let's go</h3>
+		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+	</div>
+	<div class="row go-card">
+		<div class="col span_1_of_3">
+			<img src="go1.jpg" alt="hiking-photo">
+			<div class="go-card-footer">
+				<h4>lorep ipsum</h4>
+				<p>Lorem ipsum dolor sit amet,consectetur  adipisicing...</p>
+			</div>
+		</div>
+		<div class="col span_1_of_3">
+			<img src="go1.jpg" alt="hiking-photo">
+			<div class="go-card-footer">
+				<h4>lorep ipsum</h4>
+				<p>Lorem ipsum dolor sit amet,consectetur  adipisicing...</p>
+			</div>
+		</div>
+		<div class="col span_1_of_3">
+			<img src="go1.jpg" alt="hiking-photo">
+			<div class="go-card-footer">
+				<h4>lorep ipsum</h4>
+				<p>Lorem ipsum dolor sit amet,consectetur  adipisicing...</p>
+			</div>
+		</div>
+	</div>
+	<a href="" class="btn btn-show">show more</a>
+</section>
+
+<!-- End GO Section-->
+
+
+<!-- Start DISCOUNT Section-->
+
+<section class="discount" id="discount">
+	<div class="dis-flex">
+		<div class="discount-promo-height-img col span_1_of_2">
+			<img src="discount1.jpg">
+		</div>
+		<div class="discount-promo-height discount-promo-content col span_1_of_2 box-content-discount">
+			<h3>Discount up to 50% All Excursions</h3>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			<a href="" class="btn btn-discount">read more</a>
+		</div>
+	</div>
+
+<!-- End DISCOUNT Section-->
+
+
+<!-- Start PROMO Section-->
+	<div class="dis-flex">
+	<div class="discount-promo-height discount-promo-content col span_1_of_2 box-content-promo">
+		<h3>January’s Promo: Buy 1 Get 1 Free!</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+		<a href="" class="btn btn-promo">read more</a>
+	</div>
+	<div class="discount-promo-height-img col span_1_of_2">
+		<img src="discount1.jpg">
+	</div>
+	</div>
+</section>
+
+<!-- End PROMO Section-->
+
+
+<!-- Start HIKING-MOUNTS Section-->
+
+<section class="hiking-mounts" id="hiking-mounts">
+	<h3>Hiking in the mountains</h3>
+	<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+</section>
+
+<!-- End HIKING-MOUNTS Section-->
+
+
+<!-- Start HIKING-EXPLORE Section-->
+
+<section class="hiking-explore" id="hiking-explore">
+	<div id="expo">
+		<h2 id="explore">EXPLORE</h2>
+		<h2 id="the-world">THE WORLD</h2>
+	</div>
+</section>
+
+<!-- End HIKING-EXPLORE Section-->
+
+
+<!-- Start HIKING-COMMENTS Section-->
+
+<section class="hiking-comments" id="hiking-comments">
+	<div class="comments row">
+		<div class="col span_1_of_3">
+			<h4>lorem ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+		</div>
+		<div class="col span_1_of_3">
+			<h4>lorem ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+		</div>
+		<div class="col span_1_of_3">
+			<h4>lorem ipsum</h4>
+			<p>Lorem ipsum dolor sit amet, consecte sectetur adipisicing elit, tation omne ullamco laboris nisi ut aliqolore.</p>
+		</div>
+	</div>
+	<div class="comments-footer">
+		<p class="comments-footer-p comments-footer-p-first">"</p>
+		<p class="comments-footer-p comments-footer-p-second">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+		<p class="comments-footer-p comments-footer-p-third">Lorem ipsum</p>
+	</div>
+</section>
+
+<!-- End HIKING-COMMENTS Section-->
+
+
+<!-- Start SUBSCRIBE Section-->
+
+<section class="subscribe" id="subscribe">
+	<div class="subscribe-title">
+		<h3>title here</h3>
+		<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. </p>
+	</div>
+	<div class="subscribe-btn">
+		<div><input type="subscribe" name="subscribe" placeholder="Your Email"></div>
+		<div><button type="subscribe" class="btn-subscribe">subscribe</button></div>
+	</div>
+</section>
+
+<!-- End SUBSCRIBE Section-->
+
+
+<!-- Start FOOTER Section-->
+
+<footer class="footer" id="footer">
+	<div class="paad row">
+		<div class="col span_1_of_4">
+			<div class="footer-title">
+				<ul>
+					<li>title here</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.</li>
+				</ul>
+			</div>
+			<div class="social">
+				<ul class="footer-icon">
+					<li><a href=""><img src="insta.png"></a></li>
+					<li><a href=""><img src="fb.png"></a></li>
+					<li><a href=""><img src="tt.png"></a></li>
+					<li><a href=""><img src="wa.png"></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col span_1_of_4">
+			<ul class="footer-about">
+				<li><a href="">about</a></li>
+				<li><a href="">history</a></li>
+				<li><a href="">our team</a></li>
+				<li><a href="">brand guidelens</a></li>
+				<li><a href="">term & condition</a></li>
+				<li><a href="">privacy policy</a></li>
+			</ul>
+		</div>
+		<div class="col span_1_of_4">
+			<ul class="footer-about">
+				<li><a href="">services</a></li>
+				<li><a href="">How to Order</a></li>
+				<li><a href="">Our Product</a></li>
+				<li><a href="">Order Status</a></li>
+				<li><a href="">Promo</a></li>
+				<li><a href="">Payment Method</a></li>
+			</ul>
+		</div>
+		<div class="col span_1_of_4">
+			<ul class="footer-about">
+				<li><a href="">other</a></li>
+				<li><a href="">contact us</a></li>
+				<li><a href="">help</a></li>
+				<li><a href="">privacy</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<!-- End FOOTER Section-->
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+//for sticky menu scrollber
+window.addEventListener('scroll',
+	function(){
+		let navbar = document.getElementById('sticky-menubar');
+		if(window.pageYOffset >= 1000){
+			navbar.classList.add('sticky');
+		}else{
+			navbar.classList.remove('sticky');
+		}
+	})
+
+//for mobile menu
+function openNav() {
+	document.getElementById('myNav').style.width = "100%";
+}
+
+function closeNav() {
+	document.getElementById('myNav').style.width = "0%";
+}
+</script>
+</body>
+</html>
